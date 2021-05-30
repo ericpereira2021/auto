@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Automotive Landing Page</title>
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Automotive</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="sea.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h3>Welcome to</h3>
+        <h2>All 'Bout Cars</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+        <a href="#">Explore</a>
+      </div>
+      <ul class="social">
+        <li><a href="#"><img src="images/facebook.png"></a></li>
+        <li><a href="#"><img src="images/twitter.png"></a></li>
+        <li><a href="#"><img src="images/instagram.png"></a></li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New Cars</a></li>
+        <li><a href="#">Used Cars</a></li>
+        <li><a href="#">Review</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+
+    </script>
+  </body>
+</html>
